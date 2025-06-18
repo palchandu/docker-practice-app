@@ -1,0 +1,28 @@
+services:
+  backend:
+    build: .
+    ports:
+      - "8765:8765" 
+    networks:
+      - todo_network
+    environment:
+      MONGO_URI: mongodb://mongo:27017/mydatabase  
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest  
+    ports:
+      - "27017:27017"  
+    networks:
+      - todo_network
+    volumes:
+      - mongo-data:/data/db  
+
+networks:
+  todo_network:
+    driver: bridge 
+
+volumes:
+  mongo-data:
+    driver: local  # Persist MongoDB data locally
