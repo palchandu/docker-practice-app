@@ -1,12 +1,15 @@
 // const express = require("express");
 // const mongoose = require("mongoose");
+import "dotenv/config";
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cors from "cors";
 const app = express();
 const PORT = process.env.PORT || 8765;
-const MONGO_URI = "mongodb://localhost:27017/todo-app";
+const MONGO_PORT = process.env.MONGO_PORT || 27017;
+const MONGO_HOST = process.env.MONGO_HOST || "localhost";
+const MONGO_URI = `mongodb://mongodb:${MONGO_PORT}/todo-app`;
 
 /** import routes */
 //const todoRoute = require("./routes/todo.route");
