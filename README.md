@@ -44,7 +44,8 @@ Then, you send this box anywhere — and **whoever opens it can eat or cook the 
 | Docker Image     | A read-only template used to create containers (like an app snapshot) (Blueprint or frozen lunch box )        |
 | Docker Container | A running instance of a Docker image (isolated environment).(A lunch box in use )         |
 
-| Dockerfile       | A script with instructions to build a Docker image (e.g., FROM, COPY, RUN)(The instruction list to build the box) |
+| Dockerfile       | A script with instructions to build a Docker image (e.g., FROM, COPY, RUN,The instruction list to build the box) |
+
 | Docker Daemon       | The background service that manages Docker objects. |
 | Build       | Process of turning a Dockerfile into an image: docker build |
 | Run       | Launches a container from an image: docker run |
