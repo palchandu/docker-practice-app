@@ -42,18 +42,17 @@ Then, you send this box anywhere — and **whoever opens it can eat or cook the 
 | Concept          | Analogy                               |
 | ---------------- | ------------------------------------- |
 | Docker Image     | A read-only template used to create containers (like an app snapshot) (Blueprint or frozen lunch box )        |
-| Docker Container | A running instance of a Docker image (isolated environment).(A lunch box in use )         |
-
-| Dockerfile       | A script with instructions to build a Docker image (e.g., FROM, COPY, RUN,The instruction list to build the box) |
-
+| Docker Container | A running instance of a Docker image (isolated environment),(A lunch box in use )         |
+| Dockerfile       | A script with instructions to build a Docker image (FROM, COPY, RUN,The instruction list to build the box) |
 | Docker Daemon       | The background service that manages Docker objects. |
 | Build       | Process of turning a Dockerfile into an image: docker build |
 | Run       | Launches a container from an image: docker run |
 | Volume       | Used to persist data outside the container lifecycle (e.g., databases). |
-| Network       | Docker networking is how containers talk to each other and to the outside world (like your browser or a database server).There are multiple types of network but default one is ** Bridge ** |
+| Network       | Docker networking is how containers talk to each other and to the outside world (like your browser or a database server).There are multiple types of network but default one is  Bridge  |
 | Docker Hub       | A centralize location to store images like github,bitbucket.(A recipe store (public images) )       |
 | Docker Compose       | A tool to define and run multi-container apps using docker-compose.yml |
 | Service (in Compose)      | Each container defined in docker-compose.yml |
+
 ---
 
 
